@@ -8,10 +8,6 @@ target 'insp' do
 
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'inspTests' do
-    inherit! :complete
-    # Pods for testing
-  end
 
   # Enables Flipper.
   #
@@ -23,11 +19,3 @@ target 'insp' do
   end
 end
 
-target 'insp-tvOS' do
-  # Pods for insp-tvOS
-
-  target 'insp-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-end
